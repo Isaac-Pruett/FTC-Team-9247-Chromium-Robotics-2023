@@ -31,7 +31,7 @@ public class odometry_position_handler extends driveConstants{
         int deltaR = (right_pos - PrevRightPos);
         int deltaL = (left_pos - PrevLeftPos);
 
-        double phi = (deltaL-deltaR) / ODOMETRY_COUNTS_PER_MILLIMETER / TRACK_WIDTH; // phi == delta theta
+        double phi = (deltaL-deltaR) / ODOMETRY_COUNTS_PER_MILLIMETER / TRACK_WIDTH; // phi == delta theta.
 
         double deltaMiddle = (double)((deltaL + deltaR) / 2) / ODOMETRY_COUNTS_PER_MILLIMETER;
         double deltaPerp = (deltaC - (FORWARD_OFFSET * phi)) / ODOMETRY_COUNTS_PER_MILLIMETER;
