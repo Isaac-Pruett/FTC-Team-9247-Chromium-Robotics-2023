@@ -1,9 +1,9 @@
-package org.firstinspires.ftc.teamcode.driveTrain;
+package org.firstinspires.ftc.teamcode.hardware.driveTrain;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
-// I recommend initializing this as "robot" or "driveBase", one must initialize all names before opmodes start. this is basically just an interface.
+// I recommend initializing this as "robot" or "driveBase", one must initialize all names before opModes start. this is basically just an interface.
 public class driveHardware {
     public DcMotor leftOdo;
     public DcMotor rightOdo;

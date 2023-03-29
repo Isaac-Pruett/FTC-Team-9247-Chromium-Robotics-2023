@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.ultrasonic_sensor;
+package org.firstinspires.ftc.teamcode.hardware.ultrasonic_sensor;
 
 import com.qualcomm.robotcore.hardware.DigitalChannel;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -9,8 +9,7 @@ public class DigitalUltrasonicSensor {
     private final double MILLIMETERS_PER_SECOND = 343000;
 
     DigitalChannel echoPin;
-    DigitalChannel triggerPin;
-
+    DigitalChannel triggerPin; //TODO make this able to be touched by the drivers hub
 
 
     public void initialize_sensor(DigitalChannel echo, DigitalChannel trigger){
