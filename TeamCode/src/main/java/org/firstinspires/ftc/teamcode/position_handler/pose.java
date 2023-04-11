@@ -20,7 +20,11 @@ public class pose {
     public double getAngleTo(pose pos){
         double dist_x = pos.x - this.x;
         double dist_y = pos.y - this.y;
-        return Math.atan2(dist_y, dist_x);
+        double angle = Math.atan2(dist_y, dist_x);
+
+        //(angle-(Math.PI));
+        return angle;
+
     }
 
 }
